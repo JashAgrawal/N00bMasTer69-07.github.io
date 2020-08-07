@@ -96,10 +96,10 @@ body { background: linear-gradient(to right, #808080, #FFFFFF);
              </select>
           </p>
        </fieldset>
+	 </form> 
 	  <p>
-        <button class="w3-button w3-dark-grey w3-padding-large" type="submit"><a href="signup.html">CHECK FARE</a></button></form>   
-		<button onclick="document.getElementById('rate').style.display='block'" class="w3-button w3-dark-grey w3-padding-large">VIEW RATE CARD</button></p><br><hr>
-	  	
+        
+	  	<button onclick="document.getElementById('rate').style.display='block'" class="w3-button w3-dark-grey w3-padding-large">VIEW RATE CARD</button><br><hr>
 	<div id="rate" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-black w3-display-container">
@@ -110,6 +110,24 @@ body { background: linear-gradient(to right, #808080, #FFFFFF);
       <h5>Small Truck <b>$2.50/km</b></h5>
       <h5>Medium Truck <b>$3.50/km</b></h5>
       <h5>Large Truck <b>$15.00/km</b></h5>
+    </div>
+  </div>
+</div>
+	 <button class="w3-button w3-dark-grey w3-padding-large" type="submit"><a href="signup.html">BOOK TRUCKS</a></button></p>
+		
+	<div id="detail" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('rate').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>billing details</h1>
+    </div>
+    <div class="w3-container">
+      <h5>LOADING CHARGES <b> $2.50</b></h5><br><hr>
+      <h5>UNLOADING CHARGES <b> $2.50</b></h5><br><hr>
+      <h5>TRANSPORT CHARGES <b> 1418 x 0.4 (distance x small truck transporting charges) = $567.2</b></h5><br><hr>
+      <h5>DRIVER CHARGES<b> $100</b></h5><br><hr>
+	     <button class="w3-button w3-dark-grey w3-padding-large" type="submit"><a href="checkout.html">Continue to payment</a></button>
+	    
     </div>
   </div>
 </div>
